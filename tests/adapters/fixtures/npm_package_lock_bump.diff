@@ -1,0 +1,18 @@
+diff --git a/package-lock.json b/package-lock.json
+index 1111111..2222222 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "demo",
+   "lockfileVersion": 3,
+   "packages": {
+     "": {
+       "name": "demo"
+     },
+     "node_modules/react": {
+-      "version": "18.2.0"
++      "version": "18.3.0"
+     }
+   }
+ }

@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deptracker"
+version = "0.1.0"
+description = "Mine and analyze dependency-update pull requests across GitHub projects."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+keywords = [
+  "dependency-updates",
+  "empirical-software-engineering",
+  "github-mining",
+  "research",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Version Control",
+]
+dependencies = [
+  "google-cloud-bigquery",
+  "httpx",
+  "unidiff",
+  "lxml",
+  "packaging",
+  "click",
+  "python-dotenv",
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "mypy",
+]
+
+[project.scripts]
+deptracker = "deptracker.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["deptracker*"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true

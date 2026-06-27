@@ -1,0 +1,15 @@
+diff --git a/Pipfile.lock b/Pipfile.lock
+index 1111111..2222222 100644
+--- a/Pipfile.lock
++++ b/Pipfile.lock
+@@ -1,9 +1,9 @@
+ {
+   "_meta": {},
+   "default": {
+     "requests": {
+-      "version": "==2.31.0"
++      "version": "==2.32.0"
+     }
+   },
+   "develop": {}
+ }

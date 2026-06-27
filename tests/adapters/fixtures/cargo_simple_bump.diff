@@ -1,0 +1,12 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 1111111..2222222 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -1,6 +1,6 @@
+ [package]
+ name = "demo"
+ version = "0.1.0"
+ 
+ [dependencies]
+-serde = "1.0.150"
++serde = "1.0.180"

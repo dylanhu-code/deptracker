@@ -3,39 +3,58 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
+# C extensions
+*.so
 
 # Distribution / packaging
 .Python
 build/
+develop-eggs/
 dist/
-*.egg-info/
+downloads/
+eggs/
 .eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
 *.egg
+MANIFEST
 
-# Test / coverage artifacts
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Test / coverage
 .pytest_cache/
 .coverage
-coverage.xml
+.coverage.*
 htmlcov/
-.tox/
-.nox/
-
-# Type checker / linter caches
 .mypy_cache/
-.pyre/
 .ruff_cache/
 
-# Local environment and secrets
+# Local config and data
 .env
 .env.*
-*.local
+!.env.example
+*.sqlite
+*.db
+/data/
+/notebooks/*.ipynb_checkpoints/
 
-# Local data and notebooks
-.ipynb_checkpoints/
-data/
-.cache/
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
