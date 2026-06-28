@@ -100,6 +100,14 @@ deptracker compute-alignment
 deptracker stats
 ```
 
+> **Paper sample:** To reproduce the GH Archive discovery sample reported in
+> the paper, run `deptracker discover --date YYYYMMDD` once for each of these
+> 19 daily table suffixes:
+> `20260112`, `20260120`, `20260128`, `20260205`, `20260213`, `20260223`,
+> `20260303`, `20260311`, `20260319`, `20260327`, `20260407`, `20260415`,
+> `20260423`, `20260429`, `20260430`, `20260504`, `20260505`, `20260506`,
+> and `20260507`.
+
 The default database is `data/deptracker.sqlite`. The `data/` directory is
 ignored by Git because it can contain large derived datasets and locally cached
 public GitHub text.
